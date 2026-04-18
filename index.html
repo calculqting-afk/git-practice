@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GreenRoots — Agriculture</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <div class="nav-logo">🌾 Green<span>Roots</span></div>
+  <div class="nav-links">
+    <button class="nav-btn active" onclick="showPage('home', this)">Home</button>
+    <button class="nav-btn" onclick="showPage('about', this)">About</button>
+  </div>
+</nav>
+
+<!-- ══ HOME PAGE ══ -->
+<div class="page active" id="page-home">
+
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-tag">🌱 Sustainable Farming</div>
+      <h1 class="hero-title">Grow <em>Smarter,</em><br>Harvest Better</h1>
+      <p class="hero-sub">GreenRoots brings modern agricultural knowledge and sustainable practices to farmers — helping communities thrive through the power of the land.</p>
+      <button class="hero-cta" onclick="showPage('about', document.querySelectorAll('.nav-btn')[1])">Discover Our Story →</button>
+    </div>
+    <div class="hero-right">
+      <div class="hero-illustration">
+        <svg class="field-svg" viewBox="0 0 500 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Sun -->
+          <circle cx="400" cy="80" r="48" fill="rgba(255,215,80,0.2)" />
+          <circle cx="400" cy="80" r="32" fill="rgba(255,215,80,0.35)" />
+          <circle cx="400" cy="80" r="18" fill="#ffd750" />
+          <!-- Hills -->
+          <ellipse cx="250" cy="350" rx="300" ry="90" fill="#1a4020"/>
+          <ellipse cx="100" cy="330" rx="180" ry="70" fill="#1e4a26"/>
+          <!-- Stalks -->
+          <g stroke="#4caf50" stroke-width="3" stroke-linecap="round">
+            <line x1="80"  y1="320" x2="80"  y2="230"/>
+            <line x1="120" y1="320" x2="120" y2="210"/>
+            <line x1="160" y1="320" x2="160" y2="225"/>
+            <line x1="200" y1="320" x2="200" y2="205"/>
+            <line x1="240" y1="320" x2="240" y2="215"/>
+            <line x1="280" y1="320" x2="280" y2="210"/>
+            <line x1="320" y1="320" x2="320" y2="220"/>
+            <line x1="360" y1="320" x2="360" y2="230"/>
+          </g>
+          <!-- Wheat tops -->
+          <g fill="#f5c842">
+            <ellipse cx="80"  cy="226" rx="10" ry="22"/>
+            <ellipse cx="120" cy="206" rx="10" ry="22"/>
+            <ellipse cx="160" cy="221" rx="10" ry="22"/>
+            <ellipse cx="200" cy="201" rx="10" ry="22"/>
+            <ellipse cx="240" cy="211" rx="10" ry="22"/>
+            <ellipse cx="280" cy="206" rx="10" ry="22"/>
+            <ellipse cx="320" cy="216" rx="10" ry="22"/>
+            <ellipse cx="360" cy="226" rx="10" ry="22"/>
+          </g>
+          <!-- Leaves -->
+          <g fill="rgba(76,175,80,0.6)">
+            <ellipse cx="92" cy="268" rx="18" ry="7" transform="rotate(-30 92 268)"/>
+            <ellipse cx="132" cy="255" rx="18" ry="7" transform="rotate(30 132 255)"/>
+            <ellipse cx="172" cy="262" rx="18" ry="7" transform="rotate(-30 172 262)"/>
+            <ellipse cx="212" cy="252" rx="18" ry="7" transform="rotate(30 212 252)"/>
+            <ellipse cx="252" cy="258" rx="18" ry="7" transform="rotate(-30 252 258)"/>
+            <ellipse cx="292" cy="255" rx="18" ry="7" transform="rotate(30 292 255)"/>
+          </g>
+          <!-- Fence -->
+          <g stroke="#c8a455" stroke-width="2.5" opacity="0.7">
+            <line x1="30" y1="310" x2="460" y2="310"/>
+            <line x1="60"  y1="295" x2="60"  y2="325"/>
+            <line x1="130" y1="295" x2="130" y2="325"/>
+            <line x1="200" y1="295" x2="200" y2="325"/>
+            <line x1="270" y1="295" x2="270" y2="325"/>
+            <line x1="340" y1="295" x2="340" y2="325"/>
+            <line x1="410" y1="295" x2="410" y2="325"/>
+          </g>
+          <!-- Clouds -->
+          <g fill="rgba(255,255,255,0.12)">
+            <ellipse cx="160" cy="100" rx="55" ry="22"/>
+            <ellipse cx="185" cy="92"  rx="38" ry="18"/>
+            <ellipse cx="140" cy="96"  rx="30" ry="14"/>
+          </g>
+          <g fill="rgba(255,255,255,0.08)">
+            <ellipse cx="310" cy="130" rx="40" ry="16"/>
+            <ellipse cx="330" cy="124" rx="28" ry="13"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats-bar">
+    <div class="stat-item">
+      <div class="stat-num">2.4M+</div>
+      <div class="stat-label">Hectares Cultivated</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">18K</div>
+      <div class="stat-label">Farmers Supported</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">92%</div>
+      <div class="stat-label">Yield Improvement</div>
+    </div>
+  </div>
+
+  <section class="features">
+    <div class="section-header">
+      <h2 class="section-title">How We Help<br><span>Farmers Flourish</span></h2>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🌿</div>
+        <div class="feature-title">Sustainable Practices</div>
+        <p class="feature-desc">We promote crop rotation, composting, and water conservation to keep soil healthy for generations to come.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💧</div>
+        <div class="feature-title">Smart Irrigation</div>
+        <p class="feature-desc">Modern drip and sprinkler systems reduce water waste by up to 60% while keeping crops well-nourished.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌾</div>
+        <div class="feature-title">Crop Management</div>
+        <p class="feature-desc">From seed selection to harvest planning, we guide farmers through every stage of the growing cycle.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🐛</div>
+        <div class="feature-title">Pest Control</div>
+        <p class="feature-desc">Integrated pest management reduces chemical use while protecting crops from insects and disease.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <div class="feature-title">Data & Analytics</div>
+        <p class="feature-desc">Soil testing, weather data, and yield tracking help farmers make informed decisions every season.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🤝</div>
+        <div class="feature-title">Community Network</div>
+        <p class="feature-desc">Connect with fellow farmers, share knowledge, and access cooperative markets for better prices.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">Green<span>Roots</span></div>
+    <div class="footer-copy">© 2025 GreenRoots Agriculture. All rights reserved.</div>
+  </footer>
+</div>
+
+<!-- ══ ABOUT PAGE ══ -->
+<div class="page" id="page-about">
+
+  <div class="about-hero">
+    <div class="about-hero-label">Our Story</div>
+    <h1 class="about-hero-title">Rooted in the Land,<br><em>Built for the Future</em></h1>
+    <p class="about-hero-sub">GreenRoots was founded by farmers, for farmers. We believe that sustainable agriculture is the key to feeding the world — and we're here to make it accessible to everyone.</p>
+  </div>
+
+  <div class="about-story">
+    <div class="story-text">
+      <div class="story-label">Who We Are</div>
+      <h2 class="story-title">A Mission Born in the Fields</h2>
+      <p class="story-body">
+        GreenRoots started in 2012 when a group of small-scale farmers in the region decided that modern agricultural knowledge shouldn't be reserved for large corporations. Armed with generations of farming wisdom and a passion for sustainable food systems, we built a platform that bridges tradition and innovation.<br><br>
+        Today, we serve thousands of farmers across the Philippines and Southeast Asia — providing tools, training, and community support that make a real difference in people's livelihoods. Every harvest season, we witness the power of shared knowledge.
+      </p>
+    </div>
+    <div class="story-visual">
+      <svg viewBox="0 0 340 300" fill="none" xmlns="http://www.w3.org/2000/svg" width="80%">
+        <!-- Rice terraces -->
+        <path d="M20 240 Q85 200 170 210 Q255 220 320 195 L320 260 Q255 280 170 270 Q85 260 20 260Z" fill="rgba(76,175,80,0.25)"/>
+        <path d="M20 195 Q85 155 170 165 Q255 175 320 150 L320 215 Q255 230 170 220 Q85 210 20 215Z" fill="rgba(76,175,80,0.35)"/>
+        <path d="M20 150 Q85 110 170 120 Q255 130 320 105 L320 170 Q255 185 170 175 Q85 165 20 170Z" fill="rgba(76,175,80,0.45)"/>
+        <path d="M20 105 Q85 65 170 75 Q255 85 320 60 L320 125 Q255 140 170 130 Q85 120 20 125Z" fill="rgba(76,175,80,0.55)"/>
+        <!-- Water reflections -->
+        <path d="M30 248 Q100 244 170 246 Q240 248 310 242" stroke="rgba(100,200,255,0.3)" stroke-width="1.5"/>
+        <path d="M30 203 Q100 199 170 201 Q240 203 310 197" stroke="rgba(100,200,255,0.3)" stroke-width="1.5"/>
+        <!-- Trees -->
+        <circle cx="60"  cy="98" r="18" fill="rgba(45,106,53,0.7)"/>
+        <circle cx="280" cy="55" r="14" fill="rgba(45,106,53,0.7)"/>
+        <circle cx="170" cy="68" r="16" fill="rgba(45,106,53,0.7)"/>
+        <!-- Sun glow -->
+        <circle cx="290" cy="40" r="28" fill="rgba(255,200,50,0.15)"/>
+        <circle cx="290" cy="40" r="16" fill="rgba(255,200,50,0.25)"/>
+        <circle cx="290" cy="40" r="8"  fill="rgba(255,200,50,0.6)"/>
+      </svg>
+    </div>
+  </div>
+
+  <section class="team-section">
+    <h2 class="section-title">Meet Our <span>Team</span></h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar" style="background: linear-gradient(135deg,#1a3a1f,#2d6a35);">👨‍🌾</div>
+        <div class="team-info">
+          <div class="team-name">Manuel Santos</div>
+          <div class="team-role">Founder & Lead Agronomist</div>
+          <p class="team-bio">With 25 years of hands-on farming experience in the Visayas region, Manuel leads our soil science and crop planning programs.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background: linear-gradient(135deg,#2d6a35,#4caf50);">👩‍🔬</div>
+        <div class="team-info">
+          <div class="team-name">Dr. Lena Cruz</div>
+          <div class="team-role">Agricultural Scientist</div>
+          <p class="team-bio">Lena holds a PhD in Plant Biology and develops our organic pest management and soil enrichment research programs.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background: linear-gradient(135deg,#8b6914,#c8a455);">👨‍💻</div>
+        <div class="team-info">
+          <div class="team-name">Rico Villanueva</div>
+          <div class="team-role">Technology Director</div>
+          <p class="team-bio">Rico bridges farming and technology, building the digital tools that help our community track yields and share knowledge.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="values-section">
+    <h2 class="values-title">What We Stand For</h2>
+    <div class="values-grid">
+      <div class="value-item">
+        <div class="value-icon">🌍</div>
+        <div class="value-name">Sustainability</div>
+        <p class="value-desc">Every practice we teach preserves the earth for the next generation of farmers.</p>
+      </div>
+      <div class="value-item">
+        <div class="value-icon">🤲</div>
+        <div class="value-name">Community</div>
+        <p class="value-desc">We grow stronger together — sharing knowledge, resources, and harvests.</p>
+      </div>
+      <div class="value-item">
+        <div class="value-icon">💡</div>
+        <div class="value-name">Innovation</div>
+        <p class="value-desc">Blending traditional wisdom with modern science to grow more with less.</p>
+      </div>
+      <div class="value-item">
+        <div class="value-icon">⚖️</div>
+        <div class="value-name">Equity</div>
+        <p class="value-desc">Quality agricultural support for every farmer, regardless of farm size or income.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">Green<span>Roots</span></div>
+    <div class="footer-copy">© 2025 GreenRoots Agriculture. All rights reserved.</div>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
